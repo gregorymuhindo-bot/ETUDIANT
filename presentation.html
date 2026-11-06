@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Étudiant - Evotech</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .carte {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            color: white;
+            padding: 30px 20px;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            background: white;
+        }
+        .header h1 { margin: 15px 0 5px; }
+        .header p { opacity: 0.9; margin: 0; }
+
+        .contenu { padding: 25px; text-align: left; }
+        .contenu h3 { color: #1a73e8; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
+        
+        .badge {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #1a73e8;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .info { margin: 10px 0; }
+        .info strong { color: #333; }
+
+        .btn {
+            display: block;
+            background: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .btn:hover { background: #0d47a1; }
+    </style>
+</head>
+<body>
+
+<div class="carte">
+    <div class="header">
+        <img src="image/gregr.jpeg" alt="Photo étudiant">
+        <h1>muhindo kavuthirwaki gregoire</h1>
+        <p>Étudiant en Machine Learning @ Evotech</p>
+    </div>
+
+    <div class="contenu">
+        <h3>À propos de moi</h3>
+        <p>Passionné par l'IA et l'analyse des matchs de football. 
+        J'apprends à créer des modèles pour prédire les résultats du Barça vs Real Madrid.</p>
+
+        <h3>Mes informations</h3>
+        <div class="info"><strong>📍 Ville :</strong> Goma, RDC</div>
+        <div class="info"><strong>🎓 Formation :</strong> ML - Evotech</div>
+        <div class="info"><strong>📧 Email :</strong> ton.email@gmail.com</div>
+
+        <h3>Mes compétences</h3>
+        <span class="badge">Python</span>
+        <span class="badge">Pandas</span>
+        <span class="badge">Scikit-Learn</span>
+        <span class="badge">Football Analytics</span>
+        <span class="badge">HTML</span>
+
+        <h3>Mon projet</h3>
+        <p>Analyse de tous les Clasico Barça vs Real avec un modèle RandomForest pour prédire le prochain vainqueur.</p>
+
+        <a href="barca_matchs.csv" class="btn">Voir mes données football</a>
+    </div>
+</div>
+
+</body>
+</html>
